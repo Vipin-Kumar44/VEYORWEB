@@ -477,6 +477,8 @@ nav ul li a.active::after {
   display: flex;
   transition: all 0.5s ease;
   position: relative;
+  flex-direction: column; /* Stack image and info vertically */
+  text-align: center; 
 }
 
 .team-member:hover {
@@ -485,9 +487,11 @@ nav ul li a.active::after {
 }
 
 .member-image {
-  width: 150px;
+  width: 100%;
   position: relative;
   overflow: hidden;
+  height: 300px
+  
 }
 
 .member-image img {
@@ -538,10 +542,13 @@ nav ul li a.active::after {
 
 .position {
   color: var(--secondary-color);
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin-bottom: 15px;
+  .03
+  /*74
+  \
 }
-
+-*-+
 .skills {
   display: flex;
   flex-wrap: wrap;
@@ -578,9 +585,8 @@ nav ul li a.active::after {
   margin-bottom: 15px;
   color: var(--primary-color);
 }
-
-.team-cta p {
-  max-width: 700px;
++
+  +-*.team-cta p {  max-width: 700px;
   margin: 0 auto 25px;
   color: rgba(255, 255, 255, 0.8);
 }
