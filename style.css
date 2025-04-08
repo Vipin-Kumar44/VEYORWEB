@@ -1,14 +1,15 @@
 /* style.css */
 :root {
-  --primary-color: #00f0ff;
-  --secondary-color: #ff00e4;
-  --dark-bg: #0a0a1a;
-  --darker-bg: #050510;
-  --light-text: #ffffff;
-  --dark-text: #111111;
-  --glass-bg: rgba(10, 10, 26, 0.7);
-  --glass-border: rgba(255, 255, 255, 0.1);
-  --neon-shadow: 0 0 10px var(--primary-color), 0 0 20px var(--primary-color);
+   --primary-color: #FF6B35; /* Warm orange - stimulates appetite */
+  --secondary-color: #EF8D33; /* Complementary orange */
+  --accent-color: #4CB944; /* Fresh green for contrast */
+  --dark-bg: #1A1A1A; /* Dark background */
+  --darker-bg: #0D0D0D; /* Even darker for contrast */
+  --light-text: #FFFFFF; /* White text */
+  --dark-text: #2E2E2E; /* Dark text for buttons */
+  --glass-bg: rgba(26, 26, 26, 0.85); /* Semi-transparent dark */
+  --glass-border: rgba(255, 255, 255, 0.1); /* Light border */
+  --neon-shadow: 0 0 10px rgba(255, 107, 53, 0.7); /* Warm glow */
 }
 
 /* Base Styles */
