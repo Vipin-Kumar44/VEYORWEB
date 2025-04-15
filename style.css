@@ -13,7 +13,6 @@
   --neon-shadow: 0 0 10px rgba(255, 107, 53, 0.7); /* Warm orange glow */
 }
 
-/* ALL OTHER CSS REMAINS EXACTLY THE SAME - ONLY COLORS UPDATED ABOVE */
 /* Base Styles */
 * {
   margin: 0;
@@ -137,14 +136,14 @@ a {
   margin: 0 auto;
 }
 
-/* Header Styles */
+/* Header Styles - Updated */
 header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
-  padding: 20px 0;
+  padding: 0.5px 0; /* Reduced padding */
   transition: all 0.3s ease;
   backdrop-filter: blur(10px);
   background-color: var(--glass-bg);
@@ -152,12 +151,12 @@ header {
 }
 
 header.scrolled {
-  padding: 15px 0;
+  padding: 8px 0; /* Reduced padding when scrolled */
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
 
 .logo img {
-  height: 40px;
+  height: 50px; /* Increased logo size */
   transition: all 0.3s ease;
 }
 
@@ -174,6 +173,7 @@ nav ul li a {
   font-weight: 500;
   position: relative;
   padding: 5px 0;
+  font-size: 0.95rem; /* Slightly smaller font */
 }
 
 nav ul li a::after {
@@ -457,7 +457,7 @@ nav ul li a.active::after {
   border: 1px solid rgba(255, 107, 53, 0.3);
 }
 
-/* Team Section */
+/* Team Section - Updated Layout */
 .team-description {
   max-width: 800px;
   margin: 0 auto 50px;
@@ -477,9 +477,10 @@ nav ul li a.active::after {
   border: 1px solid var(--glass-border);
   border-radius: 15px;
   overflow: hidden;
-  display: flex;
   transition: all 0.5s ease;
   position: relative;
+  display: flex;
+  flex-direction: column; /* Changed to column layout */
 }
 
 .team-member:hover {
@@ -488,7 +489,8 @@ nav ul li a.active::after {
 }
 
 .member-image {
-  width: 150px;
+  width: 100%;
+  height: 300px; /* Fixed height for image */
   position: relative;
   overflow: hidden;
 }
@@ -497,6 +499,11 @@ nav ul li a.active::after {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.team-member:hover .member-image img {
+  transform: scale(1.05);
 }
 
 .social-links {
@@ -529,8 +536,8 @@ nav ul li a.active::after {
 }
 
 .member-info {
-  flex: 1;
   padding: 25px;
+  flex: 1;
 }
 
 .member-info h3 {
